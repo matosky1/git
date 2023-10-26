@@ -1,0 +1,99 @@
+*{
+
+    margin: 0;
+
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+:root{
+
+    --unit:calc(100vh/7.8);
+    --unitheight: calc(var(--unit));
+    --2ndunitheight: calc(var(--unit) * 2);
+    --3rdunitheight: calc(var(--unit) * 4);
+
+}
+
+#TopDiv1{
+
+    background-color: green;
+    width: calc(var(--unitheight) + var(--2ndunitheight) + var(--3rdunitheight));
+
+
+   
+
+}
+
+div{
+
+    box-sizing: border-box;
+    
+
+}
+
+h1{
+
+    color: blue;
+
+}
+
+ 
+
+#TopDiv2{
+
+    background-color: red;
+
+    border: 6px solid black;
+
+    width: var(--unitheight);
+    height: var(--unitheight);
+    bottom: calc(var(--3rdunitheight) + var(--2ndunitheight));
+
+}
+
+#MidDiv1{
+
+    background-color: green;
+    border: 8px solid #ffc0cb;
+    width: var(--2ndunitheight);
+    height: var(--2ndunitheight);
+    bottom: var(--3rdunitheight);
+    margin-left: var(--unitheight);
+    padding-left: 1vw;
+    padding-top: 1vw;
+
+}
+
+#BottomDiv1{
+
+    background-color: blue;
+    border: 10px solid #ff00ff;
+    width: var(--3rdunitheight);
+    height: var(--3rdunitheight);
+    margin-left: calc(var(--2ndunitheight) + var(--unitheight));
+    bottom: 0;
+    padding-left: 1vw;
+    padding-top: 1vw;
+
+
+    
+
+ 
+
+}
+
+ 
+
+div:nth-child(4) h1{
+
+    color: green;;
+
+}
+div:nth-of-type(1) p {
+    color: aquamarine;
+}
+
